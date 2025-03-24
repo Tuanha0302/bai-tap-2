@@ -4,13 +4,13 @@
   - Tạo csdl quan hệ với tên QLSV gồm các bảng sau:
     + SinhVien(#masv,hoten,NgaySinh)
     + Lop(#maLop,tenLop)
-    + GVCN(#@maLop,#@magv,#HK)
-    + LopSV(#@maLop,#@maSV,ChucVu)
-    + GiaoVien(#magv,hoten,NgaySinh,@maBM)
-    + BoMon(#MaBM,tenBM,@maKhoa)
     + Khoa(#maKhoa,tenKhoa)
     + MonHoc(#mamon,Tenmon,STC)
+    + BoMon(#MaBM,tenBM,@maKhoa)
+    + GiaoVien(#magv,hoten,NgaySinh,@maBM)
     + LopHP(#maLopHP,TenLopHP,HK,@maMon,@maGV)
+    + GVCN(#@maLop,#@magv,#HK)
+    + LopSV(#@maLop,#@maSV,ChucVu)
     + DKMH(#@maLopHP,#@maSV,DiemTP,DiemThi,PhanTramThi)
   # các bước tạo csdl
   ## tạo database mới
@@ -85,11 +85,14 @@
     ![image](https://github.com/user-attachments/assets/c5101d93-65b5-4fdb-b862-7a8798257eb8)
 
   + ta chọn vào expression rồi chọn dấu ... bên phải để thêm điều kiện mình muốn vào
-  ![image](https://github.com/user-attachments/assets/91b21b3b-f6a4-4ae0-867d-b9aff50e6948)
+  ![image](https://github.com/user-attachments/assets/13d19232-41c5-4ba5-bbea-596ba3c51fd7)
 
     ta làm tương tự với điều kiện của điểm thi
     ![image](https://github.com/user-attachments/assets/3c7ebb6d-e6b3-4f49-be3a-e63d02b7daeb)
     cuối cùng ta ấn tổ hợp ctrl+s để lưu lại các điều kiện đã thêm
+    
+    nếu điểm nhập vào không thỏa mãn điều kiện đã đặt thì sẽ hiện thông báo lỗi để cho người dùng biết và sửa lại:
+    ![image](https://github.com/user-attachments/assets/e73272b8-bfc8-49f3-be81-3f496f5743de)
 
 - giờ ta đi nhập số liệu cho từng bảng bằng cách chuột phải vào bảng ta muốn nhập rồi chọn edit top 200 rows
   ![image](https://github.com/user-attachments/assets/5903cb3b-e44c-4efd-bf02-a74ed2c168c3)
@@ -105,6 +108,33 @@
 
   + nhập dữ liệu cho bảng MonHoc:
   ![image](https://github.com/user-attachments/assets/076dbb3d-42c6-41c8-b71a-a29dd50ca1d2)
+
+  + nhập dữ liệu cho bảng BoMon:
+  ![image](https://github.com/user-attachments/assets/294adbc2-9959-4d9d-bcfa-4537bc8754fa)
+  nếu nhập thông tin phần makhoa khác thông tin đã được lưu ở bảng khoa thì sẽ báo lỗi để check lại:
+  ![image](https://github.com/user-attachments/assets/45a2e780-34a8-425e-9d20-820badd044ad)
+
+  + nhập dữ liệu cho bảng GiaoVien:
+  ![image](https://github.com/user-attachments/assets/c13f2172-f753-4ee9-8afa-91ea9fe603da)
+
+  + nhập dữ liệu cho bảng LopHP:
+  ![image](https://github.com/user-attachments/assets/ea80000f-2e47-47df-b410-671815e466b0)
+
+  + nhập dữ liệu cho bảng GVCN:
+  ![image](https://github.com/user-attachments/assets/68d43dea-face-4c92-9b90-849519acb87b)
+
+  + nhập dữ liệu cho bảng LopSV:
+  ![image](https://github.com/user-attachments/assets/86e0e142-baa3-4063-b370-be1faa59b0fa)
+
+  + nhập dữ liệu cho bảng DKMH:
+  ![image](https://github.com/user-attachments/assets/d6ad7a8e-906e-494f-89c6-f10ebd546a8f)
+
+
+
+
+
+
+
 
 
 
