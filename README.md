@@ -129,6 +129,23 @@
   + nhập dữ liệu cho bảng DKMH:
   ![image](https://github.com/user-attachments/assets/d6ad7a8e-906e-494f-89c6-f10ebd546a8f)
 
+## Chuyển các thao tác đồ họa trên thành lệnh SQL
+- Đầu tiên ta đưa chuột tới tên của máy mình để mở các tính năng ra:
+  ![image](https://github.com/user-attachments/assets/52bc2880-b23e-423c-a9e7-e3b34a526f60)
+  
+  sau đó ta chọn new query để nhập code tạo database mới:
+  ![image](https://github.com/user-attachments/assets/4d50ce44-a5ac-4d15-a241-aa54f4d890d7)
+
+- Đây là đoạn code để tạo ra 1 database mới:
+![image](https://github.com/user-attachments/assets/e131d6cd-ee77-43e6-a142-74f3570fa2ee)
+
+  nhập xong code ta ấn vào excute để nó chạy code và sau khi chạy ta chuột phải vào database ấn refresh để cho chương trình chạy lại để hiện database mới vừa tạo:
+  ![image](https://github.com/user-attachments/assets/61654c94-1457-4620-ae18-39cc9c40ed81)
+
+  sau khi làm các bước trên ta sẽ hiện 1 database mới tên người dùng đặt (ví dụ: baitapcode) bên dưới:
+  ![image](https://github.com/user-attachments/assets/03965d93-a24c-4652-9fe0-a9e0694d11b6)
+
+
 
 
 
