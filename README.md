@@ -145,6 +145,37 @@
   sau khi làm các bước trên ta sẽ hiện 1 database mới tên người dùng đặt (ví dụ: baitapcode) bên dưới:
   ![image](https://github.com/user-attachments/assets/03965d93-a24c-4652-9fe0-a9e0694d11b6)
 
+- Đây là đoạn code để tạo ra bảng SinhVien trong tables cảu baitapcode:
+![image](https://github.com/user-attachments/assets/3cf594e5-b025-4a02-8c2d-1ee9d6ef022a)
+
+  ta sẽ làm tương tự với bảng Lop, Khoa, MonHoc nhưng phải thay đổi các phần tử bên dưới cho đúng với mỗi bảng ví dụ như tạo bảng MonHoc:
+  ![image](https://github.com/user-attachments/assets/e19fcd81-e35b-4a48-a36f-589305456eba)
+
+- còn các bảng còn lại có thêm khóa ngoại và khóa chính hỗn hợp (composite primary key) thì ta sẽ có chút thay đổi về dòng lệnh
+  
+  + ta có thể tham khảo code khi tạo bảng GVCN dưới đây để xem cách tạo bảng có khóa chính hỗn hợp:
+  ![image](https://github.com/user-attachments/assets/a56b2c8b-fada-45a8-b96b-7a71c1595546)
+
+  + sau khi tạo đủ 10 bảng ta có thể thêm khóa ngoại cho các bảng liên kết với nhau ví dụ bằng lệnh code khi liên kết makhoa ở bảng BoMon với makhoa ở bảng Khoa:
+  ![image](https://github.com/user-attachments/assets/03dc854c-ad97-4fca-87a1-f84807a323c5)
+
+  + còn nếu muốn thêm điều kiện của từng thuộc tính ta có thể tham khảo dòng code dưới là điều kiện của diemthi, diemTP khi tạo bảng DKMH theo lệnh code:
+  ![image](https://github.com/user-attachments/assets/76fecd54-6134-4cc0-a01f-6e866674ff1d)
+
+- sau khi tạo xong đủ các bảng, liên kết các khóa ngoại thì ta có thể thao tác nhập các dữ liệu tương đương với cách thao tác đồ họa mà không bị lỗi 
+
+## lợi ích khi dùng lệnh SQL để làm 
+- việc dùng lệnh SQL để làm giúp giảm thời gian khi phải làm nhiều bảng
+- các chức năng của cách tạo bằng lệnh tương đương với cách thao tác đồ họa
+- có thể tái sử dụng code
+- chính xác hơn và ít lỗi hơn cách theo tác đồ họa
+
+
+    
+
+
+
+
 
 
 
